@@ -9,6 +9,8 @@ import java.util.List;
 @Service
 public class StudentService {
 
+
+    private StudentRepo repo;
     public StudentRepo getRepo() {
         return repo;
     }
@@ -17,7 +19,7 @@ public class StudentService {
         this.repo = repo;
     }
 
-    private StudentRepo repo;
+
 
     //method for student
     public void addStudent(Student st) {
